@@ -1,0 +1,31 @@
+.category-collection {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.category-image {
+    margin: 0rem .9rem;
+    width: 17rem;
+    cursor: pointer;
+}
+
+.category-name {
+    padding: 1rem 0;
+    margin: auto;
+    color: #4a4643;
+    cursor: pointer;
+}
+
+.category:hover .category-name {
+    color: black;
+}

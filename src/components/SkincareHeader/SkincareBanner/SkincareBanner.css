@@ -1,0 +1,10 @@
+.skincare-banner {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 1rem auto 0;
+}
