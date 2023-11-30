@@ -18,6 +18,9 @@ function ProductList() {
         // console.log(product);
         const productID = `product${index}`;
         const productPrice = typeof product.price === 'number' ? `$${product.price}` : product.price;
+        const ratingPercentage = product.rating / 5 * 100;
+        // const ratingImageString = `<img style="width:${ratingPercentage}%;" src="https://i.gyazo.com/db0a9552231bc3395e7246fe4eef972f.png" />`
+        const ratingString = product.rating ? `${product.rating} stars` : null;
         return (
             <div className='product' id={productID}>
                 <div className='product-image-box'>
@@ -26,7 +29,10 @@ function ProductList() {
                 </div>
                 <p className='product-name'>{product.name}</p>
                 <p className='product-price'>{productPrice}</p>
-                <p className='product-rating'>{product.rating}</p>
+                <div className='product-rating'>
+                    <p className='product-rating-number'>{ratingString}</p>
+                    {/* {document.getElementById(productID).querySelector('.product-rating').innerHTML = ratingImageString} */}
+                </div>
                 <p className='product-options'>{product.options}</p>
             </div>
         )

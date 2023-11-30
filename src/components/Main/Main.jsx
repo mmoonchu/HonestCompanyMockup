@@ -1,6 +1,6 @@
 import React from 'react'
-import SortingDropdowns from '../SortingDropdowns/SortingDropdowns'
-import ProductList from '../ProductList/ProductList'
+import SortingDropdowns from './SortingDropdowns/SortingDropdowns'
+import ProductList from './ProductList/ProductList'
 import "./Main.css"
 
 function Main() {
