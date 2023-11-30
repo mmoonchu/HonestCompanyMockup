@@ -1,12 +1,13 @@
 import React from 'react'
 import SkincareHeader from '../../components/SkincareHeader/SkincareHeader'
-import ProductList from '../../components/ProductList/ProductList'
+import Main from '../../components/Main/Main'
+import "./Skincare.css"
 
 function Skincare() {
   return (
     <div className='skincare-main'>
         <SkincareHeader />
-        <ProductList />
+        <Main />
     </div>
   )
 }

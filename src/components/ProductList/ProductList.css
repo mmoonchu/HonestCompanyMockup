@@ -1,7 +1,5 @@
 .product-list {
     align-self: center;
-    width: 90%;
-    max-width: 68rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -25,11 +23,13 @@
 .product-image-box {
     display: flex;
     object-fit: contain;
+    width: 100%;
+    margin: auto;
 }
 .product-image {
     width: 100%;
-    max-width: 15rem;
     object-fit: contain;
+    margin-bottom: 1rem;
 }
 .product-tag {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,4 +45,10 @@
 }
 .product-price {
     margin: 1rem 0;
+    font-weight: 600;
+}
+.product-options {
+    margin-top: 1rem;
+    font-size: .8rem;
+    color: rgb(44, 44, 44)
 }

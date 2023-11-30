@@ -1,14 +1,12 @@
 import React from 'react'
-import SortingDropdowns from '../SortingDropdowns/SortingDropdowns'
 import SkincareBanner from './SkincareBanner/SkincareBanner'
 import SkincareCategories from './SkincareCategories/SkincareCategories'
 
 function SkincareHeader() {
   return (
-    <div>
+    <div className='skincare-header'>
         <SkincareBanner />
         <SkincareCategories />
-        <SortingDropdowns />
     </div>
   )
 }

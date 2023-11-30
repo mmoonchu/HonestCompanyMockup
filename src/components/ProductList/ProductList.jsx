@@ -17,12 +17,12 @@ function ProductList() {
     const productsJSX = products.map((product, index) => {
         // console.log(product);
         const productID = `product${index}`;
-        const productPrice = `$${product.price}`;
+        const productPrice = typeof product.price === 'number' ? `$${product.price}` : product.price;
         return (
             <div className='product' id={productID}>
                 <div className='product-image-box'>
                     <img className='product-image' src={product.image} />
-                    <p className='product-tag'>{product.tag}</p>
+                    {product.tag !== null && <p className='product-tag'>{product.tag}</p>}
                 </div>
                 <p className='product-name'>{product.name}</p>
                 <p className='product-price'>{productPrice}</p>

@@ -24,6 +24,7 @@
     margin: auto;
     color: #4a4643;
     cursor: pointer;
+    font-size: .8rem;
 }
 
 .category:hover .category-name {

@@ -1,5 +1,6 @@
-.skincare-main {
+.main {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    width: 90%;
+    max-width: 72rem;
 }

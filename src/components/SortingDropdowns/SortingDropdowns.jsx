@@ -1,12 +1,13 @@
 import React from 'react'
-import Featured from './Featured'
+import SortBy from './SortBy'
 import FilterBy from './FilterBy'
+import "./SortingDropdowns.css"
 
 function SortingDropdowns() {
   return (
-    <div>
-        <Featured />
+    <div className='sorting-dropdowns'>
         <FilterBy />
+        <SortBy />
     </div>
   )
 }
